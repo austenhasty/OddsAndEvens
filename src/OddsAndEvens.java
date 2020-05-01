@@ -22,7 +22,7 @@ public class OddsAndEvens {
 
         Random rand = new Random();
         int computer = rand.nextInt(6);
-        System.out.println("The computer plays " + computer + "\"fingers\".");
+        System.out.println("The computer plays " + computer + " \"fingers\".");
         System.out.println("---------------------------------------");
         System.out.println();
 
@@ -31,5 +31,20 @@ public class OddsAndEvens {
 
         boolean result = sum % 2 == 0;
 
+        if (result) {
+            System.out.println(sum + " is ...even!");
+        } else {
+            System.out.println(sum + " is ...odd!");
+        }
+
+        if (result && choice.equalsIgnoreCase("E")) {
+            System.out.println("Congratulations! You won!");
+        } else if (!result && choice.equalsIgnoreCase("O")) {
+            System.out.println("Congratulations! You won!");
+        } else {
+            System.out.println("Better luck next time! The computer won this round!");
+        }
+        System.out.println("---------------------------------------");
+        System.out.println();
     }
 }
