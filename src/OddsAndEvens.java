@@ -17,6 +17,19 @@ public class OddsAndEvens {
         System.out.println("---------------------------------------");
         System.out.println();
 
+        System.out.print("How many \"fingers\" are you going to play? ");
+        int fingers = input.nextInt();
+
+        Random rand = new Random();
+        int computer = rand.nextInt(6);
+        System.out.println("The computer plays " + computer + "\"fingers\".");
+        System.out.println("---------------------------------------");
+        System.out.println();
+
+        int sum = fingers + computer;
+        System.out.println(fingers + " + " + computer + " = " + sum);
+
+        boolean result = sum % 2 == 0;
 
     }
 }
